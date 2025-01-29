@@ -4,6 +4,7 @@ import (
     "errors"
     "fmt"
     "math/rand"
+    "time"
 )
 
 // Hello returns a greeting for the named person.
@@ -20,6 +21,9 @@ func Hello(name string) (string, error) {
 // randomFormat returns one of a set of greeting messages. The returned
 // message is selected at random.
 func randomFormat() string {
+    // Seed the random number generator only once (in the first call)
+    rand.Seed(time.Now().UnixNano())
+
     // A slice of message formats.
     formats := []string{
         "Hi, %v. Welcome!",
