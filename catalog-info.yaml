@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: greetings
+  annotations:
+    github.com/project-slug: zhaho/greetings
+spec:
+  type: other
+  lifecycle: unknown
