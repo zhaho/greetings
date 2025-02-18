@@ -2,9 +2,14 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: greetings
+  description: |
+    Greetings is an simple library which gives greetings to people.
+  links:
+    - title: Go
+      url: https://go.dev
   annotations:
     github.com/project-slug: zhaho/greetings
 spec:
   type: library
-  owner: zhaho
-  lifecycle: development
+  owner: Kenneth Ros
+  lifecycle: production
