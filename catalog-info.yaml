@@ -13,3 +13,4 @@ spec:
   type: library
   owner: Kenneth Ros
   lifecycle: production
+  subcomponentOf: zhaho/hello
